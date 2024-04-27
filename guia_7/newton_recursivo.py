@@ -1,9 +1,11 @@
 import sympy as sp
+import math
+import numpy as np
 
 x = sp.symbols('x')
 
-Xn = [2,5,7]
-fx = x**2
+Xn = [1,2,3,4]
+fx = sp.ln(x)
 
 def eval_fx(Xn, fx): #Funcion para evaluar todos los puntos Xn 
     
