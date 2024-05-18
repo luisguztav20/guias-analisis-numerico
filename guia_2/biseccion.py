@@ -40,8 +40,7 @@ while True:
     
     aprox_anterior = xr
     iteracion += 1
-
-print(df)
+print(type(df))
 print('La Raiz es: ', xr)
 print('Con un error de: ', Ea,'%')
 print('Con ',iteracion,'iteraciones')
