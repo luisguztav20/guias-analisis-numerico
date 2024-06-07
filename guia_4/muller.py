@@ -6,7 +6,7 @@ from sympy import symbols
 x = sp.symbols("x")
 
 iteracion = 1
-Es = 0.5 * 10 ** (2 - 4)
+Es = 0.5 * 10 ** (2 - 3)
 fx = x**3 -13*x - 12
 X0 = 4.5
 X1 = 5.5
@@ -42,9 +42,9 @@ while True:
     D = math.sqrt((b ** 2) - (4 * a * c))
 
     if abs(b + D) > abs(b - D):
-        Xr = X2 + (((-2) * c)/(b + math.sqrt((b**2) + D)))
+        Xr = X2 + (((-2) * c)/((b**2) + D))
     else:
-        Xr = X2 + (((-2) * c)/(b - math.sqrt((b**2) + D)))
+        Xr = X2 + (((-2) * c)/((b**2) - D))
 
     Ea = abs(((Xr - X2)/Xr)*100)
 
